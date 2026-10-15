@@ -118,23 +118,23 @@ export default function Home() {
     difficultyRef.current = { arrivalInterval, patience };
   }, [arrivalInterval, patience]);
 
-function handleMachineCup() {
-  // TODO: Prevent cup transfers while holding fish.
-
-  // TODO: Place the player's cup on an empty machine.
-
-  // TODO: Pick up the machine's cup when hands are empty.
-}
-
-// Called when the player clicks a coffee, tea, or milk button.
-function fillCup(ingredient: "coffee" | "tea" | "milk") {
-  setMachineCup((current) => {
-    // TODO: Decide what cup state to return based on
-    // the current cup and the ingredient selected.
-
-    return current;
-  });
-}
+  function handleMachineCup() {
+    // TODO: Prevent cup transfers while holding fish.
+  
+    // TODO: Place the player's cup on an empty machine.
+  
+    // TODO: Pick up the machine's cup when hands are empty.
+  }
+  
+  // Called when the player clicks a coffee, tea, or milk button.
+  function fillCup(ingredient: "coffee" | "tea" | "milk") {
+    setMachineCup((current) => {
+      // TODO: Decide what cup state to return based on
+      // the current cup and the ingredient selected.
+  
+      return current;
+    });
+  }
 
   useEffect(() => {
     // Reset happy or sad reactions after one second; clear the old timeout when the expression changes.
