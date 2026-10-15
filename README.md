@@ -2,6 +2,11 @@
 
 In this assignment, you will use React state to complete the drink machine in a Cat Café game. You will implement two functions: one to move cups between the player and the machine, and another to prepare drinks.
 
+## Game
+
+Check out a working version of the game here: https://cat-cafe-snowy.vercel.app/
+(must not be connected to UGA wifi)
+
 ## Learning Outcomes
 
 - Update React state using state setters
