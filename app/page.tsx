@@ -136,28 +136,15 @@ export default function Home() {
     }
   }
 
-  // Coffee or tea fills an empty cup; milk converts either drink into its milk variant.
-  function fillCup(ingredient: "coffee" | "tea" | "milk") {
-    setMachineCup((current) => {
-      if (current === null) return null;
+// Called when the player clicks a coffee, tea, or milk button.
+function fillCup(ingredient: "coffee" | "tea" | "milk") {
+  setMachineCup((current) => {
+    // TODO: Decide what cup state to return based on
+    // the current cup and the ingredient selected.
 
-      if (ingredient === "coffee" && current === "empty") {
-        return "coffee";
-      }
-
-      if (ingredient === "tea" && current === "empty") {
-        return "tea";
-      }
-
-      if (ingredient === "milk") {
-        if (current === "coffee") return "milkCoffee";
-        if (current === "tea") return "milkTea";
-      }
-
-      // Unsupported ingredient combinations leave the drink unchanged.
-      return current;
-    });
-  }
+    return current;
+  });
+}
 
   useEffect(() => {
     // Reset happy or sad reactions after one second; clear the old timeout when the expression changes.
