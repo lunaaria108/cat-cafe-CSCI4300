@@ -118,23 +118,13 @@ export default function Home() {
     difficultyRef.current = { arrivalInterval, patience };
   }, [arrivalInterval, patience]);
 
-  // Clicking the tray transfers a cup between the player and machine when the destination is empty.
-  function handleMachineCup() {
-    if (carryingFish) return;
+function handleMachineCup() {
+  // TODO: Prevent cup transfers while holding fish.
 
-    // Place the carried cup on an empty machine.
-    if (machineCup === null && carryingCup !== null) {
-      setMachineCup(carryingCup);
-      setCarryingCup(null);
-      return;
-    }
+  // TODO: Place the player's cup on an empty machine.
 
-      // Pick up the cup from the machine.
-    if (machineCup !== null && carryingCup === null) {
-      setCarryingCup(machineCup);
-      setMachineCup(null);
-    }
-  }
+  // TODO: Pick up the machine's cup when hands are empty.
+}
 
 // Called when the player clicks a coffee, tea, or milk button.
 function fillCup(ingredient: "coffee" | "tea" | "milk") {
