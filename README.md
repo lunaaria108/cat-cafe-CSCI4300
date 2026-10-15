@@ -120,20 +120,4 @@ In this assignment, you will complete the drink machine in a Cat Café game usin
    - Pick up a prepared drink and deliver it to a customer who ordered it.
    - Test promptly so customers do not run out of patience!
 
-6. **Explain your work**
-   - Why do you use `setMachineCup()` to update the cup?
-   - What does `current` represent in the updater function?
-   - How does changing `machineCup` update the cup image?
-
-## Bonus: Transfer the Cup
-
-If your instructor has also removed the body of `handleMachineCup()`, complete it using these rules:
-
-- If the player is carrying fish, do nothing.
-- If the machine is empty and the player holds a cup, move the cup onto the machine.
-- If the machine holds a cup and the player’s hands are empty, move the cup into the player’s hands.
-- Otherwise, leave both states unchanged.
-
-**Hint:** You will need to update both `carryingCup` and `machineCup`.
-
 ## Have fun :) 🐾
